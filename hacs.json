@@ -1,0 +1,7 @@
+{
+  "name": "iSauna",
+  "render_readme": true,
+  "content_in_root": false,
+  "domains": ["integration"],
+  "filename": "custom_components/isauna/manifest.json"
+}

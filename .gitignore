@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+*.pot
+*.mo
+*.db
+*.sqlite3
+*.env
+.env
+.vscode/
+.idea/
+.DS_Store
+desktop.ini
+.claude/

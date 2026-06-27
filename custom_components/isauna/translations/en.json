@@ -1,0 +1,77 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "iSauna",
+        "description": "Connect directly to your iSauna controller on the local network.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "tcp_password": "TCP password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the controller."
+    },
+    "abort": {
+      "already_configured": "This iSauna controller is already configured."
+    }
+  },
+  "entity": {
+    "climate": {
+      "thermostat": {
+        "state_attributes": {
+          "preset_mode": {
+            "state": {
+              "infra": "Infra",
+              "finn": "Finnish",
+              "steam": "Steam"
+            }
+          }
+        }
+      }
+    },
+    "sensor": {
+      "temperature": { "name": "Temperature" },
+      "humidity": { "name": "Humidity" },
+      "desired_temperature": { "name": "Desired temperature" },
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "off": "Off",
+          "infra": "Infra",
+          "finn": "Finnish",
+          "steam": "Steam"
+        }
+      },
+      "infra1": { "name": "Infra fill 1" },
+      "infra2": { "name": "Infra fill 2" },
+      "timer": { "name": "Timer" },
+      "airtimer": { "name": "Air timer" }
+    },
+    "switch": {
+      "light": { "name": "Light" },
+      "mood_light": { "name": "Mood light" },
+      "starry_sky": { "name": "Starry sky" },
+      "air": { "name": "Air" }
+    },
+    "number": {
+      "set_temperature": { "name": "Set temperature" },
+      "set_infra1": { "name": "Set infra 1" },
+      "set_infra2": { "name": "Set infra 2" },
+      "set_min": { "name": "Set minutes" }
+    },
+    "select": {
+      "set_mode": {
+        "name": "Set mode",
+        "state": {
+          "off": "Off",
+          "infra": "Infra",
+          "finn": "Finnish",
+          "steam": "Steam"
+        }
+      }
+    }
+  }
+}
